@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: whitesmoke;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    nav {
+      background-color: darkslategray;
+      color: white;
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .brand {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* MAIN WRAPPER */
+    .wrapper {
+      max-width: 1100px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* GRID LAYOUT */
+    .grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 25px;
+    }
+
+    /* SIDEBAR IMAGES */
+    .sidebar img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    /* VIDEO */
+    .video-container {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: black;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+
+    .video-container video,
+    .video-container iframe {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* AUDIO */
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: darkslategray;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    /* HEADINGS */
+    h1, h2, h3 {
+      margin-top: 20px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 800px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+   <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: darkslategray;">
+      <a class="navbar-brand" href="#">Jonnie's Beef Recipe</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies and Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="travel.html">Travel</a></li>
+          <li class="nav-item active"><a class="nav-link" href="recipe3.html">Recipe</a></li>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="recipe2.html">Recipe 2</a>
+              <a class="dropdown-item" href="recipe.html">Recipe 1</a>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </nav>
+  <!-- MAIN CONTENT -->
+  <div class="wrapper">
+
+    <div class="grid">
+
+      <!-- LEFT COLUMN -->
+      <div class="content">
+        <p>
+          <b>Johnnie’s Beef’s</b> signature Italian beef recipe traces its roots to the broader
+          Chicago <em>Italian-American tradition</em> that emerged in the early 20th century...
+        </p>
+
+        <a href="https://mccaravan.org/know-our-neighborhood/2020/12/06/johnnies-beef-an-elmwood-park-tradition/"
+           target="_blank">Johnnie’s Beef: an Elmwood Park tradition</a>
+
+        <h2>Italian Beef Recipe</h2>
+
+        <h3>Description</h3>
+        <p>
+          This Italian beef recipe is inspired by the classic Chicago-style preparation made
+          famous by places like Johnnie’s Beef...
+        </p>
+
+        <h3>Ingredients</h3>
+        <ul>
+          <li>3–4 lb beef top round or sirloin roast</li>
+          <li>3 cups beef broth</li>
+          <li>1 cup water</li>
+          <li>1 tablespoon garlic powder</li>
+          <li>1 tablespoon onion powder</li>
+          <li>1 tablespoon dried oregano</li>
+          <li>1 tablespoon dried basil</li>
+          <li>1 teaspoon crushed red pepper (optional)</li>
+          <li>1 teaspoon black pepper</li>
+          <li>1 teaspoon salt</li>
+          <li>1 teaspoon dried thyme</li>
+          <li>2 bay leaves</li>
+          <li>Italian rolls</li>
+          <li>Giardiniera or roasted sweet peppers</li>
+        </ul>
+
+        <h3>Directions</h3>
+        <ol>
+          <li>Preheat oven to 325°F (165°C).</li>
+          <li>Combine all seasonings and rub them evenly over the beef roast.</li>
+          <li>Place the roast in a baking dish and add beef broth, water, and bay leaves.</li>
+          <li>Cover and cook for 2.5 to 3 hours.</li>
+          <li>Remove and let cool.</li>
+          <li>Slice the beef thin.</li>
+          <li>Return sliced beef to warm broth and simmer.</li>
+          <li>Serve on Italian rolls with sweet peppers or giardiniera.</li>
+        </ol>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="sidebar">
+        <img src="j2.jpeg" alt="The building">
+        <img src="johnnies.jpeg" alt="Italian beef sandwich">
+
+        <div class="video-container">
+          <video controls>
+            <source src="videoplayback.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <audio controls>
+          <source src="audio-club-edyn-343275.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        </div>
+
+      </div>
+
+    </div>
+    <footer class="py-3">
+      <div class="container text-center">
+        © 2026 Akhil Balestri · All rights reserved
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  </body>
+</html>
